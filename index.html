@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salil Kayastha</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scroll.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="topnav" id="navbar">
+      <a href="javascript:scrollTo('contactme')">Contact me</a>
+      <a href="javascript:scrollTo('education')">Education</a>
+      <a href="javascript:scrollTo('about')">About</a>
+      <a href="javascript:scrollTo('home')">Home</a>
+    </div>
+
+    <div id="home">
+      <div>
+        <img src="assets/images/profile.jpg" alt="profile picture" />
+      </div>
+      <p>
+        Salil Kayastha<br />
+        Ruby on Rails Developer
+      </p>
+    </div>
+    <div id="about">about</div>
+    <div id="education">Education</div>
+    <div id="contactme"><p>contact me</p></div>
+
+    <!-- this is js -->
+    <script>
+      // for sticky navbar
+
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>

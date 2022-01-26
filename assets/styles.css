@@ -1,0 +1,101 @@
+@font-face {
+  font-family: BebasNeue;
+  src: url(/assets/fonts/BebasNeue.ttf);
+}
+@font-face {
+  font-family: IndieFlower;
+  src: url(/assets/fonts/IndieFlower.ttf);
+}
+
+/* Top navigaton bar */
+body {
+  margin: 0;
+  font-family: BebasNeue, IndieFlower, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.topnav a {
+  float: right;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 8px;
+  border-radius: 15;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(133, 146, 72);
+  color: rgb(162, 243, 203);
+}
+
+/* For Sticky navbar */
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* For ScrollToPage */
+#navbar {
+  overflow: hidden;
+  background-color: #2f3e46;
+}
+
+#contactme {
+  height: 100vh;
+  width: 100vw;
+  background: #cad2c5;
+}
+
+#education {
+  height: 100vh;
+  width: 100vw;
+  background: #84a98c;
+}
+
+#about {
+  height: 100vh;
+  width: 100vw;
+  color: green;
+  background: #52796f;
+}
+
+#home {
+  height: 100vh;
+  width: 100vw;
+  /* display: flex; */
+  color: rgb(162, 243, 203);
+  background: #354f52;
+  /* background: linear-gradient(to right, #26d0ce, #1a2980); */
+}
+
+p {
+  font-family: "BebasNeue", sans-serif;
+  font-size: 2em;
+  padding: 250px 250px;
+  margin-left: 500px;
+}
+
+/* image */
+img {
+  width: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 250px;
+  margin-right: 50px;
+  margin-top: 150px;
+  float: left;
+}
