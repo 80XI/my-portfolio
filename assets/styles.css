@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: BebasNeue;
   src: url(/assets/fonts/BebasNeue.ttf);
@@ -19,6 +18,10 @@ body {
   font-family: BebasNeue, IndieFlower;
 }
 
+.container {
+  width: 100%;
+}
+
 .topnav {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
@@ -28,7 +31,7 @@ body {
   float: right;
   color: #ffffff;
   text-align: center;
-  padding: 14px 8px;
+  padding: 9px 8px;
   border-radius: 15;
   text-decoration: none;
   font-size: 17px;
@@ -41,7 +44,7 @@ body {
 
 /* For Sticky navbar */
 .content {
-  padding: 16px;
+  padding: 9px;
 }
 
 .sticky {
@@ -67,7 +70,7 @@ body {
   background: #cad2c5;
 }
 
-.center{
+.center {
   text-align: center;
   padding-top: 20px;
 }
@@ -80,23 +83,38 @@ body {
   background: #84a98c;
 }
 
-hr.line{
+hr.line {
   border: 1px solid #2f3e46;
 }
 
 p.year {
   font-style: italic;
- }
+}
 
 h1.headerspace {
-  line-height: 4;
+  font-family: SupermercadoOne;
+  line-height: 2;
+  text-align: center;
 }
+
+h4.heading4 {
+  font-family: SupermercadoOne;
+}
+
 #about {
+  font-family: UbuntuCondensed;
+  padding-left: 50px;
   height: 100vh;
   width: 100vw;
-  color: green;
   background: #52796f;
 }
+
+.column{
+  column-count: 2;
+  column-rule-color: rgb(0, 0, 0);
+  column-gap: 40px;
+  column-rule-style: solid;
+  }
 
 #home {
   height: 100vh;
@@ -114,6 +132,10 @@ p.homename {
   margin-left: 500px;
 }
 
+p.contents {
+  font-family: UbuntuCondensed;
+}
+
 /* image */
 img {
   width: 250px;
@@ -124,4 +146,3 @@ img {
   margin-top: 150px;
   float: left;
 }
-
