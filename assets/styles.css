@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: BebasNeue;
   src: url(/assets/fonts/BebasNeue.ttf);
@@ -7,10 +8,15 @@
   src: url(/assets/fonts/IndieFlower.ttf);
 }
 
+@font-face {
+  font-family: SupermercadoOne;
+  src: url(/assets/fonts/SupermercadoOne.ttf);
+}
+
 /* Top navigaton bar */
 body {
   margin: 0;
-  font-family: BebasNeue, IndieFlower, sans-serif;
+  font-family: BebasNeue, IndieFlower;
 }
 
 .topnav {
@@ -55,17 +61,36 @@ body {
 }
 
 #contactme {
+  font-family: SupermercadoOne;
   height: 100vh;
   width: 100vw;
   background: #cad2c5;
 }
 
+.center{
+  text-align: center;
+  padding-top: 20px;
+}
+
 #education {
+  font-family: SupermercadoOne;
+  text-align: center;
   height: 100vh;
   width: 100vw;
   background: #84a98c;
 }
 
+hr.line{
+  border: 1px solid #2f3e46;
+}
+
+p.year {
+  font-style: italic;
+ }
+
+h1.headerspace {
+  line-height: 4;
+}
 #about {
   height: 100vh;
   width: 100vw;
@@ -82,7 +107,7 @@ body {
   /* background: linear-gradient(to right, #26d0ce, #1a2980); */
 }
 
-p {
+p.homename {
   font-family: "BebasNeue", sans-serif;
   font-size: 2em;
   padding: 250px 250px;
@@ -99,3 +124,4 @@ img {
   margin-top: 150px;
   float: left;
 }
+
