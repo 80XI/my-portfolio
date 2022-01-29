@@ -12,6 +12,15 @@
   src: url(/assets/fonts/SupermercadoOne.ttf);
 }
 
+@font-face {
+  font-family: UbuntuCondensed;
+  src: url(/assets/fonts/UbuntuCondensed.ttf);
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
 /* Top navigaton bar */
 body {
   margin: 0;
@@ -23,6 +32,7 @@ body {
 }
 
 .topnav {
+  font-family: BebasNeue;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
 }
@@ -43,9 +53,6 @@ body {
 }
 
 /* For Sticky navbar */
-.content {
-  padding: 9px;
-}
 
 .sticky {
   position: fixed;
@@ -63,23 +70,69 @@ body {
   background-color: #2f3e46;
 }
 
-#contactme {
-  font-family: SupermercadoOne;
+.section {
+  padding-top: 5vh;
   height: 100vh;
   width: 100vw;
+}
+
+#contactme {
   background: #cad2c5;
 }
 
+#contactme_form {
+  border: 2px solid grey;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding: 10px;
+}
+
+.contactme_form_input {
+  padding: 5px;
+}
+.contactme_form_input input {
+  height: 30px;
+  width: 300px;
+}
+.contactme_form_input textarea {
+  resize: none;
+  height: 119px;
+  width: 303px;
+}
+#contactme_submit {
+  margin: 20px;
+}
+#contactme_submit input[type="text"] {
+  width: 20px;
+  height: 20px;
+}
+#contactme_submit input[type="button"] {
+  margin: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+#contactme_submit p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+#contactme_social img {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  float: none;
+}
+#contactme_social p {
+  margin: 0;
+}
 .center {
   text-align: center;
   padding-top: 20px;
 }
 
 #education {
-  font-family: SupermercadoOne;
   text-align: center;
-  height: 100vh;
-  width: 100vw;
   background: #84a98c;
 }
 
@@ -91,38 +144,31 @@ p.year {
   font-style: italic;
 }
 
-h1.headerspace {
+h1 {
   font-family: SupermercadoOne;
-  line-height: 2;
   text-align: center;
 }
 
-h4.heading4 {
+h4 {
   font-family: SupermercadoOne;
 }
 
 #about {
   font-family: UbuntuCondensed;
   padding-left: 50px;
-  height: 100vh;
-  width: 100vw;
   background: #52796f;
 }
 
-.column{
+.column {
   column-count: 2;
   column-rule-color: rgb(0, 0, 0);
   column-gap: 40px;
   column-rule-style: solid;
-  }
+}
 
 #home {
-  height: 100vh;
-  width: 100vw;
-  /* display: flex; */
   color: rgb(162, 243, 203);
   background: #354f52;
-  /* background: linear-gradient(to right, #26d0ce, #1a2980); */
 }
 
 p.homename {
@@ -132,8 +178,9 @@ p.homename {
   margin-left: 500px;
 }
 
-p.contents {
+.paragraph {
   font-family: UbuntuCondensed;
+  line-height: 30px;
 }
 
 /* image */
