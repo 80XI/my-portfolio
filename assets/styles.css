@@ -12,10 +12,15 @@
   src: url(/assets/fonts/SupermercadoOne.ttf);
 }
 
+@font-face {
+  font-family: UbuntuCondensed;
+  src: url(/assets/fonts/UbuntuCondensed.ttf);
+}
+
 /* Top navigaton bar */
 body {
   margin: 0;
-  font-family: BebasNeue, IndieFlower;
+  font-family: UbuntuCondensed;
 }
 
 .container {
@@ -67,9 +72,59 @@ body {
   font-family: SupermercadoOne;
   height: 100vh;
   width: 100vw;
+
+#contactme {
   background: #cad2c5;
+  text-align: center;
 }
 
+#contactme_form {
+  border: 2px solid grey;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding: 10px;
+}
+
+.contactme_form_input {
+  padding: 5px;
+}
+.contactme_form_input input {
+  height: 30px;
+  width: 300px;
+}
+.contactme_form_input textarea {
+  resize: none;
+  height: 119px;
+  width: 303px;
+}
+#contactme_submit{
+  margin: 20px;
+}
+#contactme_submit input[type = "text"] {
+  width: 20px;
+  height: 20px;
+}
+#contactme_submit input[type = "button"] {
+  margin: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+#contactme_submit p {
+
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+#contactme_social img {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  float: none;
+}
+#contactme_social p {
+  margin: 0;
+}
 .center {
   text-align: center;
   padding-top: 20px;
