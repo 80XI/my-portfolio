@@ -24,7 +24,7 @@
 /* Top navigaton bar */
 body {
   margin: 0;
-  font-family: BebasNeue, IndieFlower;
+  font-family: UbuntuCondensed;
 }
 
 .container {
@@ -78,6 +78,7 @@ body {
 
 #contactme {
   background: #cad2c5;
+  text-align: center;
 }
 
 #contactme_form {
