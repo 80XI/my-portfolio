@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salil Kayastha</title>
-    <link rel="stylesheet" href="assets/styles.css" />
-    <script src="assets/scroll.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scroll.js"></script>
     <style></style>
   </head>
 
@@ -98,22 +98,33 @@
           <div><h1>Contact Me</h1></div>
           <div><h4>I'll be happy to talk with you</h4></div>
         </div>
-        <form action="" method="post">
+        <form
+          action="mailto:salilkayastha1490@gmail.com?subject=myform_submission"
+          enctype="text/plain"
+          onsubmit="location.href='thanks.html';"
+        >
           <div id="contactme_form">
             <div class="contactme_form_input">
-              <input type="text" placeholder="Full Name" />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Full Name"
+                required
+              />
             </div>
+            <div></div>
             <div class="contactme_form_input">
-              <input type="text" placeholder="Email" />
+              <input type="text" name="email" placeholder="Email" required />
             </div>
+            <div></div>
             <div class="contactme_form_input">
-              <textarea placeholder="Message"> </textarea>
+              <textarea name="body" placeholder="Message" required>
+              </textarea>
             </div>
+            <div></div>
           </div>
           <div id="contactme_submit">
-            <p>Are you human?</p>
-            <div>2 + 2 = <input type="text" /></div>
-            <div><input type="button" value="Submit" /></div>
+            <div><input type="submit" value="Submit" /></div>
           </div>
         </form>
         <div id="contactme_social">
